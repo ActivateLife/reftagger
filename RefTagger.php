@@ -1,6 +1,6 @@
 <?php
 /* 
-Plugin Name: RefTagger
+Plugin Name: RefTagger Activate Life Edition
 Plugin URI: http://www.logos.com/reftagger
 Description: Transform Bible references into links to the full text of the verse.
 Author: Logos Bible Software
@@ -27,7 +27,7 @@ function lbsFooter($unused)
 	
 	// Generate the script code to be printed on the page
 	?>
-<script>
+<script type="text/javascript">
 	var refTagger = {
 		settings: {
 			bibleVersion: "<?php echo $bible_version;?>",
@@ -476,7 +476,7 @@ function lbs_options_page()
       </table>
   </table>
   <p class="submit">
-    <input type="submit" name="submit" value="Save Changes" />
+    <input class="button-primary" type="submit" name="submit" value="Save Changes" />
   </p>
 </form>
 <?php
